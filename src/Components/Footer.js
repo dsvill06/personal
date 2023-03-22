@@ -3,29 +3,30 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn } from 'mdb-re
 import './Footer.css'
 
 export const Footer=() => (
-    <MDBFooter fluid bgColor='dark' className='text-center text-lg-start text-muted ' >
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
-          <span>Get connected with us on social networks:</span>
+    <MDBFooter bgColor='dark' className='text-center text-lg-start text-muted' >
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom' id="section1">
+        <div className='me-5 d-none d-lg-block' id="sm-header">
+          <span>Get connected with me, social networks</span>
+          <span id="line"> -</span>
         </div>
 
-        <div>
-          <a href='https://www.facebook.com/' target='_blank' className='me-4 text-reset'>
+        <div id="list">
+          <a href='https://www.facebook.com/' target='_blank' className='me-4 text-reset' id="item">
             <MDBBtn className='m1' floating style={{backgroungColor: '#3b5998'}}>
                 <MDBIcon fab icon="facebook-f" />
             </MDBBtn>
           </a>
-          <a href='https://www.instagram.com/david_vill06/' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/david_vill06/' className='me-4 text-reset' id="item">
             <MDBBtn className='m1' floating style={{backgroungColor: '#ac2bac'}}>
                 <MDBIcon fab icon="instagram" />
             </MDBBtn>
           </a>
-          <a href='https://www.linkedin.com/in/dsvill06/' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/in/dsvill06/' className='me-4 text-reset' id="item">
             <MDBBtn className='m1' floating style={{backgroundColor: '#0082ca'}}>
                 <MDBIcon fab icon="linkedin" />
             </MDBBtn>
           </a>
-          <a href='https://github.com/dsvill06' className='me-4 text-reset'>
+          <a href='https://github.com/dsvill06' className='me-4 text-reset' id="item">
           <MDBBtn className='m1' floating style={{backgroundColor: '#333333'}}>
                 <MDBIcon fab icon="github" />
             </MDBBtn>

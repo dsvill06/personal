@@ -8,14 +8,13 @@ import {Navigation} from './Components/Navbar'
 import {Footer} from './Components/Footer'
 import {Jumbotron} from './Components/Jumbotron'
 import {MDBContainer} from 'mdb-react-ui-kit'
+import './App.css'
 
 class App extends Component{
   render() {
     return (
-      <>
+      <div>
         <Navigation/>
-        <Jumbotron/>
-        <MDBContainer className='text-center text-md-start mt-5'>
           <Router>
               <Routes>
                 <Route path='/home' element={<Home/>}/>
@@ -24,9 +23,8 @@ class App extends Component{
                 <Route path='*' element={<NoMatch/>}/>
               </Routes>
             </Router>
-        </MDBContainer>
         <Footer/>
-      </>
+      </div>
     );
   }
 }
