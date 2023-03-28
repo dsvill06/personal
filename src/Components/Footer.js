@@ -4,8 +4,8 @@ import './Footer.css'
 
 export const Footer=() => (
     <MDBFooter bgColor='dark' className='text-center text-lg-start text-muted' >
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom' id="section1">
-        <div className='me-5 d-none d-lg-block' id="sm-header">
+      <section className='d-flex justify-content-center justify-content-lg-between p-2 border-bottom' id="section1">
+        <div className=' mt-2 me-5 d-none d-lg-block' id="sm-header">
           <span>Get connected with me, social networks</span>
           <span id="line"> -</span>
         </div>
@@ -35,57 +35,25 @@ export const Footer=() => (
       </section>
 
       <section className=''>
-        <MDBContainer className='text-center text-md-start mt-5'>
-          <MDBRow className='mt-3'>
-            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
-                Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-              </p>
-            </MDBCol>
-
-            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-              <p>
-                <MDBIcon icon="home" className="me-2" />
-                Chapel Hill, Nc 27514, US
-              </p>
-              <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                dsvill06@unc.edu
-              </p>
-              <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 984-9894714
-              </p>
-            </MDBCol>
+        <MDBContainer className='text-center mt-4'>
+          <MDBRow className='mt-3 '>
+              <MDBCol>
+                <p>
+                  <MDBIcon icon="home" className="me-2" />
+                  Chapel Hill, Nc 27514, US
+                </p>
+              </MDBCol>
+              <MDBCol>
+                <p>
+                  <MDBIcon icon="envelope" className="me-3" />
+                  dsvill06@unc.edu
+                </p>
+              </MDBCol>
+              <MDBCol>
+                <p>
+                  <MDBIcon icon="phone" className="me-3" /> + 01 984-9894714
+                </p>
+              </MDBCol>
           </MDBRow>
         </MDBContainer>
       </section>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom';
 import {Home} from './Home';
 import {About} from './About';
 import {Contact} from './Contact';
@@ -9,24 +9,24 @@ import {Footer} from './Components/Footer'
 import {Jumbotron} from './Components/Jumbotron'
 import {MDBContainer} from 'mdb-react-ui-kit'
 import './App.css'
+import {AnimatePresence, motion} from 'framer-motion'
 
-class App extends Component{
-  render() {
+export default function App() {
+  
     return (
       <div>
         <Navigation/>
           <Router>
+            <AnimatePresence>
               <Routes>
-                <Route path='/home' element={<Home/>}/>
-                <Route path='/about' element={<About/>}/>
-                <Route path='/contact' element={<Contact/>}/>
-                <Route path='*' element={<NoMatch/>}/>
-              </Routes>
+                    <Route path='/home' element={<Home/>}/>
+                    <Route path='/about' element={<About/>} />
+                    <Route path='/contact' element={<Contact/>}/>
+                    <Route path='*' element={<NoMatch/>}/>
+                  </Routes>
+            </AnimatePresence>
             </Router>
-        <Footer/>
+          <Footer/>
       </div>
     );
   }
-}
-
-export default App;

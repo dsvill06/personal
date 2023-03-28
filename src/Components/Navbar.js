@@ -6,7 +6,7 @@ import { Offcanvas } from 'react-bootstrap';
 
 
 export const Navigation = () => (
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <button
       class="navbar-toggler"
@@ -19,36 +19,20 @@ export const Navigation = () => (
     >
       <i class="fas fa-bars"></i>
     </button>
-    <a class="navbar-brand" href="#">Navbar</a>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="about">About me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled"
-            >Disabled</a
-          >
+          <a class="nav-link" href="contact"
+            >Contact
+          </a>
         </li>
       </ul>
-      <form class="d-flex input-group w-auto">
-        <input
-          type="search"
-          class="form-control"
-          placeholder="Type query"
-          aria-label="Search"
-        />
-        <button
-          class="btn btn-outline-primary"
-          type="button"
-          data-mdb-ripple-color="dark"
-        >
-          Search
-        </button>
-      </form>
     </div>
   </div>
   </nav>

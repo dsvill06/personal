@@ -1,8 +1,31 @@
 .jumbo{
-    background: url('./assets/David.JPG') no-repeat center center  ;      
+    background: url('./assets/David.JPG') no-repeat center center fixed;      
     /* Set up proportionate scaling */
     background-size:cover;
-    height:50rem;      
+    background-position: absolute;
     border-color: black;
+    z-index: 0;
 
+}
+.first{
+    height:50rem;      
+
+}
+.shade{
+    background-color: #42413C;
+    background-size: cover;
+    background-position: relative;     
+    height:50rem;
+    background: rgba(243, 243, 243, 0.9);
+}
+.move-1{
+    position: fixed;
+    color: #42413C;
+}
+.image{
+    height:fit-content;
+    width: fit-content;
+}
+.cover-img{
+    background-color: hsla(0, 0%, 98%, 0.2);
 }

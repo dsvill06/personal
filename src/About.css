@@ -1,0 +1,9 @@
+.about{
+    background-color: #262020 ;      
+    /* Set up proportionate scaling */
+    background-size:cover;
+    background-position: fixed;
+    height:50rem;      
+    border-color: black;
+
+}

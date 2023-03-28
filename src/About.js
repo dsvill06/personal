@@ -1,20 +1,56 @@
 import React from 'react'
 import { MDBContainer } from 'mdb-react-ui-kit'
+import './About.css'
+import {AnimatePresence, motion} from 'framer-motion'
 
 export const About = () => (
-    <MDBContainer fluid className='text-center text-lg-start text-muted' >
-         <div>
-        <h1>
-            David Villavicencio
-        </h1>
-        <div class="d-flex justify-content-end">
-        <p>met purus met purus gravida. Aliquam malesuada bibendum arcu vitae elementum curabitur. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Neque laoreet suspendisse interdum consectetur libero. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Ut pharetra sit amet aliquam id diam maecenas ultricies. Habitant morbi tristique senectus et netus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Viverra vitae congue eu consequat ac felis donec et. Faucibus pulvinar elementum integer enim neque volutpat. Amet tellus cras adipiscing enim  gravida. Aliquam malesuada bibendum arcu vitae elementum curabitur. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Neque laoreet suspendisse interdum consectetur libero. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Ut pharetra sit amet aliquam id diam maecenas ultricies. Habitant morbi tristique senectus et netus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Viverra vitae congue eu consequat ac felis donec et. Faucibus pulvinar elementum integer enim neque volutpat. Amet tellus cras adipiscing enim eu turpis egestas. Mauris augue neque gravida in fermentum et. Urna condimentum mattis pellentesque id nibh.</p>
-        <img src={require('./assets/David.JPG')} class=' shadow-4-strong m-1 w-50' id="image"/>
+    <div className='about'>
+        <AnimatePresence>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            />
+        <div className='d-flex pt-5'>
+            <div className='col-md-12 border'>
+                <div className='text-light'>
+                    <div className='row justify-content-center text-center'>
+                        <div className='pt-4'>
+                            <h1 className='fw-light display-4'>
+                                Interests
+                            </h1>
+                        </div>
+                    </div>
+                    <div className='d-flex row mt-5'>
+                        <div class="col-md-8">
+                            <div class="pb-3">
+                                <h3 className='fw-light text-center'>
+                                    About
+                                </h3>
+                            </div>
+                            <div class="row ">
+                            <div class="col-md-6">
+                                <h4 className='fw-light text-center'>
+                                    Profile
+                                </h4>
+                                <div className="ps-3">
+                                    <img src={require("./assets/David.JPG")} className="img-fluid rounded-circle"/>
+                                    <p className=''>David Sebastian Villavicencio</p>
+                                    <hr class="hr hr-blurry" />
+                                    <h5>Birth-Date</h5>
+                                    <p>June 18, 2004</p>
+                                    <hr class="hr hr-blurry" />
+                                    <h5>Email</h5>
+                                    <p>dsvill06@unc.edu</p>
+                                    <hr class="hr hr-blurry" />
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>met purus gravida. Aliquam malesuada bibendum arcu vitae elementum curabitur. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Neque laoreet suspendisse interdum consectetur libero. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Ut pharetra sit amet aliquam id diam maecenas ultricies. Habitant morbi tristique senectus et netus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Viverra vitae congue eu consequat ac felis donec et. Faucibus pulvinar elementum integer enim neque volutpat. Amet tellus cras adipiscing enim eu turpis egestas. Mauris augue neque gravida in fermentum et. Urna condimentum mattis pellentesque id nibh.</p>
-        <img src={require('./assets/Old-Well.jpg')} class="shadow-4-strong m-1 w-50"/>
-
-
-    </div>    
-    </MDBContainer>
+        </AnimatePresence>
+    </div>
 )

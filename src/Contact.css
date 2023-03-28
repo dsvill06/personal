@@ -1,0 +1,9 @@
+.contact{
+    background: url('./assets/contact-background.jpg') no-repeat center center  ;      
+    /* Set up proportionate scaling */
+    background-size:cover;
+    background-position: fixed;
+    height:50rem;      
+    border-color: black;
+
+}
