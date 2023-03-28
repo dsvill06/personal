@@ -4,15 +4,25 @@ import './About.css'
 import {AnimatePresence, motion} from 'framer-motion'
 
 export const About = () => (
-    <div className='about'>
+    <div className=''>
         <AnimatePresence>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             />
-        <div className='d-flex pt-5'>
-            <div className='col-md-12 border'>
+        <div className="about-1 d-flex justify-content-center align-items-center text-center">
+            <div className='text-dark border border-dark p-5 rounded-6' style={{background: 'rgba(243, 243, 243, 0.7)',width:"35rem"}}>
+                <h1 className="display-3">
+                    About Me
+                </h1>
+                <h6 className='fw-light'>
+                    pc: Carolina Skies by David Villavicencio
+                </h6>
+            </div>
+        </div>
+        <div className='d-flex pt-5 about-2 border'>
+            <div className='col-md-12'>
                 <div className='text-light'>
                     <div className='row justify-content-center text-center'>
                         <div className='pt-4'>
@@ -34,7 +44,7 @@ export const About = () => (
                                     Profile
                                 </h4>
                                 <div className="ps-3">
-                                    <img src={require("./assets/David.JPG")} className="img-fluid rounded-circle"/>
+                                    <img src={require("./assets/Generic-Music-Notes.jpeg")} className="img-fluid rounded-9 border-5 border-info"/>
                                     <p className=''>David Sebastian Villavicencio</p>
                                     <hr class="hr hr-blurry" />
                                     <h5>Birth-Date</h5>

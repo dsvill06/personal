@@ -1,4 +1,10 @@
-.about{
+.about-1{
+    background: url('./assets/scene.jpg') no-repeat center center;     /* Set up proportionate scaling */
+    background-size:cover;
+    height:50rem;      
+    border-color: black;
+}
+.about-2{
     background-color: #262020 ;      
     /* Set up proportionate scaling */
     background-size:cover;
