@@ -1,5 +1,5 @@
 .about-1{
-    background: url('./assets/scene.jpg') no-repeat center center;     /* Set up proportionate scaling */
+    background: url('./assets/scene.jpg') no-repeat center center fixed;     /* Set up proportionate scaling */
     background-size:cover;
     height:50rem;      
     border-color: black;
@@ -9,7 +9,23 @@
     /* Set up proportionate scaling */
     background-size:cover;
     background-position: fixed;
-    height:50rem;      
+    height:auto;      
     border-color: black;
 
+}
+.about-3{
+    background-color: #262020 ;      
+    /* Set up proportionate scaling */
+    
+    height: relative 3px;      
+    border-color: black;
+
+}
+.move{
+    transition: transform .2s; /* Animation */
+}
+
+.move:hover{
+    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: #3B71CA;
 }

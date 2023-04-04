@@ -20,7 +20,7 @@ export function Home(){
                 <section className='me-5 pe-5 text-light'>
                     <h1 className='fw-light display-1'>David Villavicencio
                         <a href='about'>
-                            <i class="fas fa-xs fa-angle-right move-1"></i>
+                            <i class="move fas fa-xs fa-angle-right move-1"></i>
                         </a>
                     <h2 className='fw-lighter display-6' >Student, Programmer, Entrepreneur</h2 >
                     </h1>
@@ -73,7 +73,6 @@ export function Home(){
                                         <i class="fab fa-python fa-2x pe-3"></i>
                                         Python</p>
                                         <hr class="hr hr-blurry" />
-                                        
                                         <p>
                                         <i class="fab fa-java fa-2x pe-3"></i>
                                               Java</p>
@@ -99,7 +98,7 @@ export function Home(){
                             Resume
                         </h2>
                         <a className='ripple text-center' data-mdb-ripple-color="dark">
-                            <button role="button" class="btn btn-primary btn-dark btn-rounded btn-lg active " aria-pressed="true" onClick={saveFile}>
+                            <button role="button" class="download btn btn-primary btn-dark btn-rounded btn-lg active " aria-pressed="true" onClick={saveFile}>
                                 Download
                             </button>
                         </a>
