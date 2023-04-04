@@ -95,7 +95,7 @@ export const About = () => (
                 <div className='row text-center text-light'>
                     <div className=' col h-25 w-25 pb-5'>
                         <img src={corinth} className='h-25 w-25 img-fluid shadow-2-strong rounded-circle'></img>
-                        <p className=''>Graduated from Corinth Holders High School in the top 10%</p>
+                        <p className=''>Graduated from Corinth Holders High School in the top 10% in my hometown of Clayton, Nc</p>
                         <hr class="hr hr-blurry" />
                         <img src={jcc} className='h-25 w-25 img-fluid shadow-2-strong rounded-circle'></img>
                         <p> Took dual enrollement courses at Johnston Community College</p>
