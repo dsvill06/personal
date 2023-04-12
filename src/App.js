@@ -20,7 +20,7 @@ export default function App() {
             <AnimatePresence>
               <Routes>
                     <Route path="" element={<Navigate to="/home" />} />
-                    <Route path="/personal" element={<Navigate to="/home" />} />
+                    <Route path="/personal" element={<Navigate to="/personal/home" />} />
                     <Route path='/home' element={<Home/>}/>
                     <Route path='/about' element={<About/>} />
                     <Route path='/contact' element={<Contact/>}/>
