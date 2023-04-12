@@ -16,11 +16,11 @@ export default function App() {
     return (
       <div>
         <Navigation/>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <AnimatePresence>
               <Routes>
                     <Route path="" element={<Navigate to="/home" />} />
-                    <Route path="/personal" element={<Navigate to="/personal/home" />} />
+                    <Route path="/" element={<Navigate to="/home" />} />
                     <Route path='/home' element={<Home/>}/>
                     <Route path='/about' element={<About/>} />
                     <Route path='/contact' element={<Contact/>}/>
