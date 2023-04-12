@@ -16,7 +16,7 @@ export default function App() {
     return (
       <div>
         <Navigation/>
-          <Router basename={process.env.PUBLIC_URL}>
+          <Router basename="/personal">
             <AnimatePresence>
               <Routes>
                     <Route path="" element={<Navigate to="/home" />} />
