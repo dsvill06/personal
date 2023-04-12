@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, Navigate,SearchDashboard, useLocation} from 'react-router-dom';
 import {Home} from './Home';
 import {About} from './About';
 import {Contact} from './Contact';
@@ -19,6 +19,8 @@ export default function App() {
           <Router>
             <AnimatePresence>
               <Routes>
+                    <Route path="" element={<Navigate to="/home" />} />
+                    <Route path="/personal" element={<Navigate to="/home" />} />
                     <Route path='/home' element={<Home/>}/>
                     <Route path='/about' element={<About/>} />
                     <Route path='/contact' element={<Contact/>}/>
